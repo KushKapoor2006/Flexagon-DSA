@@ -260,6 +260,7 @@ Flexagon-DSA/
 │   └── outputs/                  # flexpipe.json, yosys_report.json
 ├── scripts/                      # helpers (prepare_vgg_inputs.py)
 ├── Makefile                      # top-level run targets (optional)
+├── Flexagon.pdf                  # Orignal Flexagon Architecture Paper
 └── README.md                     # this file
 ```
 
