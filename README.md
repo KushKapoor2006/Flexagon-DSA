@@ -1,14 +1,14 @@
 # Flexagon-DSA — Memory-Prefetch Extension of Flexagon NN Accelerator
 
-> **Project (research internship / research assistant work)** — Engineering extension of the original **Flexagon** accelerator. This repository contains a synthesizable SystemVerilog memory-control extension ("FlexPipe") with a pointer-walking prefetch DMA, strict-priority arbiter, configuration manager, a cycle-accurate Verilator harness, a high-level C simulator, an analysis pipeline that produces publication-ready plots, and a synthesis (Yosys) flow with resource reporting.
+> **Project (research internship / research assistant work)** — Engineering extension of the original **Flexagon** accelerator paper. This repository contains a synthesizable SystemVerilog memory-control extension ("FlexPipe") with a pointer-walking prefetch DMA, strict-priority arbiter, configuration manager, a cycle-accurate Verilator harness, a high-level C simulator, an analysis pipeline that produces publication-ready plots, and a synthesis (Yosys) flow with resource reporting.
 
 **Primary contributions in this repo:**
 
 * Implemented a prefetch-driven memory-control path that integrates with the Flexagon architecture.
-* Built a reproduciable evaluation pipeline (simulator → analysis → plots).
+* Built a reproducible evaluation pipeline (simulator → analysis → plots).
 * Performed technology-independent synthesis and produced resource metrics.
 
-**Status:** implementation and evaluation complete; per-cycle CSV instrumentation in the harness is tracked and will be fixed (see Roadmap).
+**Status:** Implementation and evaluation complete; per-cycle CSV instrumentation in the harness is tracked and will be fixed (see Roadmap).
 
 ---
 
