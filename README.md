@@ -19,7 +19,7 @@
 3. [Quickstart — reproduce figures & synthesis](#quickstart--reproduce-figures--synthesis)
 4. [Detailed design & modules](#detailed-design--modules)
 5. [Simulator & analysis pipeline (how results were produced)](#simulator--analysis-pipeline-how-results-were-produced)
-6. [Instrumentation & per-request/per-cycle logs (notes for reviewers)](#instrumentation--per-requestper-cycle-logs-notes-for-reviewers)
+6. [Instrumentation & per-request/per-cycle logs](#instrumentation--per-requestper-cycle-logs-notes-for-reviewers)
 7. [Evaluation: numeric metrics & interpretation](#evaluation-numeric-metrics--interpretation)
 8. [Synthesis (Yosys) results & what they mean](#synthesis-yosys-results--what-they-mean)
 9. [File structure (expanded)](#file-structure-expanded)
