@@ -169,7 +169,7 @@ All these outputs are included in `analysis/results/` in the repo.
 
 ---
 
-## Instrumentation — per-request & per-cycle logs (notes for reviewers)
+## Instrumentation — per-request & per-cycle logs
 
 ### What is recorded and what is reliable
 
@@ -186,12 +186,6 @@ Issued 10 Responses 10 total_cycles 16824
 These per-request metrics were used to validate timing and align the harness with the high-level model.
 
 * **Per-cycle CSV snapshot (`per_cycle_log.csv`)**: an intended deep-dive trace with pre/post snapshots of `mem_master_req`, `mem_master_resp`, and `active_config`. In early runs this CSV contained zeros due to a harness-to-RTL snapshot timing mismatch (instrumentation race during reset/initialization). The harness, snapshot code, and RTL register names are tracked and will be adjusted; see Roadmap.
-
-### How we present this to reviewers (concise)
-
-> The harness provides validated per-request timing. Per-cycle snapshot functionality exists and is documented; current zeros are an instrumentation artifact and do not impact the correctness of the per-request timings or the simulator-driven performance plots.
-
-This phrasing is included verbatim in the README to be transparent.
 
 ---
 
@@ -231,10 +225,6 @@ Issued 10 Responses 10 total_cycles 16824
 
 * We synthesized using Yosys (version used: 0.59+ recommended). The tool produced a JSON netlist (`synthesis/outputs/flexpipe.json`) which the repo contains.
 * Counts: 311 FFs, 634 total cells, 4.7k wire bits — these numbers are technology-independent but indicate the design is small. Mapping to a real process (e.g., sky130) would allow area and timing estimates.
-
-**Suggested CV wording (copy/paste):**
-
-> Extended Flexagon by implementing a prefetch-driven memory-control subsystem; synthesized to **~634 generic cells** and **311 FFs** (Yosys), and demonstrated **1.33×** speedup on VGG-16 (tuned) and **1.10×** on DistilBERT (tuned) using a validated simulator and Verilator harness.
 
 ---
 
@@ -337,7 +327,7 @@ make report
 * **Research Assistant** Kush Kapoor
 * **Supervisor:** <SUPERVISOR_NAME_PLACEHOLDER>
 
-This work was performed as part of a research internship / RA assignment. Use the CV-ready summary above for application materials.
+This work was performed as part of a research internship / RA assignment.
 
 ---
 
