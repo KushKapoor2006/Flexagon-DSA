@@ -15,7 +15,6 @@
 ## Table of contents
 
 1. [Overview & Motivation](#overview--motivation)
-2. [What this repo contains (detailed)](#what-this-repo-contains-detailed)
 3. [Quickstart — reproduce figures & synthesis](#quickstart--reproduce-figures--synthesis)
 4. [Detailed design & modules](#detailed-design--modules)
 5. [Simulator & analysis pipeline (how results were produced)](#simulator--analysis-pipeline-how-results-were-produced)
