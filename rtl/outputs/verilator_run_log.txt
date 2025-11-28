@@ -1,0 +1,16 @@
+JSON: ../simulator/inputs/vgg16_tuned.json
+workload: inputs/workload.txt requests=10
+REQ[0] id=0 issued_t=2016 resp_t=2030
+REQ[1] id=1 issued_t=4036 resp_t=4050
+REQ[2] id=2 issued_t=6056 resp_t=6070
+REQ[3] id=3 issued_t=7578 resp_t=7592
+REQ[4] id=4 issued_t=9100 resp_t=9114
+REQ[5] id=5 issued_t=10622 resp_t=10636
+REQ[6] id=6 issued_t=12144 resp_t=12158
+REQ[7] id=7 issued_t=13666 resp_t=13680
+REQ[8] id=8 issued_t=15188 resp_t=15202
+REQ[9] id=9 issued_t=16710 resp_t=16724
+Measured work cycles (first issue -> last response): 14708
+RTL dbg_cycle_count = 7354
+active_config.compute_cycles (raw) = 0
+Issued 10 Responses 10 total_cycles 16824

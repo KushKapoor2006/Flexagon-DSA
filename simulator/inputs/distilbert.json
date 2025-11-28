@@ -1,0 +1,10 @@
+{
+    "network": "DistilBERT",
+    "layers": [
+        {"layer_name": "Embeddings", "compute_cycles": 500000,  "config_bits": 20000, "pointer_walks": 3, "data_size": 512000},
+        {"layer_name": "Attn_1",     "compute_cycles": 8000000, "config_bits": 30000, "pointer_walks": 5, "data_size": 4096000},
+        {"layer_name": "FFN_1",      "compute_cycles": 6000000, "config_bits": 15000, "pointer_walks": 3, "data_size": 2048000},
+        {"layer_name": "Attn_2",     "compute_cycles": 8000000, "config_bits": 30000, "pointer_walks": 5, "data_size": 4096000},
+        {"layer_name": "FFN_2",      "compute_cycles": 6000000, "config_bits": 15000, "pointer_walks": 3, "data_size": 2048000}
+    ]
+}

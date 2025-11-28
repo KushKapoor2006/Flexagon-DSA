@@ -1,0 +1,38 @@
+# synth.ys - Yosys synthesis script for flexpipe_top
+# Ensure package/header is parsed first.
+
+# Read the common header / "package" (macros + typedefs)
+read_verilog -sv rtl/flexpipe_pkg.sv
+
+# Read the rest of the RTL explicitly
+read_verilog -sv rtl/config_manager.sv
+read_verilog -sv rtl/prefetch_dma.sv
+read_verilog -sv rtl/memory_arbiter.sv
+read_verilog -sv rtl/dram_model.sv
+read_verilog -sv rtl/dummy_core.sv
+read_verilog -sv rtl/flexpipe_top.sv
+
+# Check hierarchy and ensure top exists
+hierarchy -check -top flexpipe_top
+
+# Standard preparation and optimizations
+proc
+fsm
+opt
+memory
+opt
+
+flatten
+opt
+
+# Technology independent mapping + ABC optimization
+techmap
+abc -fast
+opt
+
+# Print statistics (no -t; older/newer Yosys variants differ here)
+stat
+
+# Write outputs
+write_json outputs/flexpipe.json
+write_verilog -noattr outputs/flexpipe_synth.v

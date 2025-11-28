@@ -1,0 +1,15 @@
+{
+    "network": "VGG-16",
+    "layers": [
+        {"layer_name": "Conv1_1", "compute_cycles": 50000, "config_bits": 8000, "pointer_walks": 2, "data_size": 10240},
+        {"layer_name": "Conv1_2", "compute_cycles": 45000, "config_bits": 8000, "pointer_walks": 2, "data_size": 9128},
+        {"layer_name": "Pool1",   "compute_cycles": 10000, "config_bits": 1000, "pointer_walks": 1, "data_size": 2048},
+        {"layer_name": "Conv2_1", "compute_cycles": 60000, "config_bits": 8000, "pointer_walks": 2, "data_size": 12288},
+        {"layer_name": "Conv2_2", "compute_cycles": 55000, "config_bits": 8000, "pointer_walks": 2, "data_size": 11264},
+        {"layer_name": "Pool2",   "compute_cycles": 5000,  "config_bits": 1000, "pointer_walks": 1, "data_size": 1024},
+        {"layer_name": "Conv3_1", "compute_cycles": 70000, "config_bits": 8000, "pointer_walks": 2, "data_size": 14336},
+        {"layer_name": "Conv3_2", "compute_cycles": 65000, "config_bits": 8000, "pointer_walks": 2, "data_size": 13312},
+        {"layer_name": "Conv3_3", "compute_cycles": 65000, "config_bits": 8000, "pointer_walks": 2, "data_size": 13312},
+        {"layer_name": "Pool3",   "compute_cycles": 2000,  "config_bits": 1000, "pointer_walks": 1, "data_size": 512}
+    ]
+}

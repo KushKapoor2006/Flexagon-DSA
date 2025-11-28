@@ -1,0 +1,4 @@
+Measured work cycles: 14708
+RTL dbg_cycle_count = 7354
+Issued 10 Responses 10 total_cycles 16824
+Done. Logs: outputs/verilator_run_log.txt, outputs/per_cycle_log.csv, outputs/write_debug.log
