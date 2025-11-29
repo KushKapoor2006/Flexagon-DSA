@@ -325,7 +325,7 @@ make report
 ## Authorship & acknowledgement
 
 * **Research Assistant** Kush Kapoor
-* **Supervisor:** <SUPERVISOR_NAME_PLACEHOLDER>
+* **Supervisor:** Prof Dr. Ajai Kumar Gautam (Delhi Technological University)
 
 This work was performed as part of a research internship / RA assignment.
 
