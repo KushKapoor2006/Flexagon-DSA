@@ -333,7 +333,7 @@ This work was performed as part of a research internship / RA assignment.
 
 ## License & contact
 
-MIT License — see `LICENSE` (or add one). For reproducibility requests or questions, open an issue or contact:
+MIT License — see `LICENSE`. For reproducibility requests or questions, open an issue or contact:
 
 **Email:** kushkapoor.kk1234@gmail.com
 
