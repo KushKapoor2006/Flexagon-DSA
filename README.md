@@ -190,16 +190,18 @@ These per-request metrics were used to validate timing and align the harness wit
 
 ## Evaluation: numeric metrics & interpretation
 
-### Synthesis / hardware footprint (Vivado: Xilinx Zynq-7020 at 256 MHz)
+### FPGA Implementation Results (Post-Synthesis)
+The design was synthesized using **Vivado 2023.1** targeting the **Xilinx Zynq-7020 (XC7Z020)** SoC.
 
-* **Top module**: `flexpipe_top`
-* **Registers (FFs)**: **311**
-* **LUTs**: **87**
-* **Worst Negative Slack (WNS)**: **+0.107ns at 250MHz**
-* **Total cells**: **634** (generic logic cells, yosys)
-* **Wire bits**: **4,717** (yosys flattened)
-* **Inferred memories**: 0 (small FIFO → flops)
-* **On-Chip Power**: **377mW**
+| Metric | Value | Notes |
+| :--- | :--- | :--- |
+| **Max Frequency ($F_{max}$)** | **256.87 MHz** | Timing closed with +0.107ns slack (4ns clock) |
+| **Logic Utilization** | **87 LUTs** (<1%) | Ultra-lightweight control logic |
+| **Registers** | **311 FFs** (<1%) | Mostly configuration & state tracking |
+| **Total Power** | **377 mW** | Suitable for edge/embedded constraints |
+
+### Scalability Analysis
+Due to the minimal area footprint (87 LUTs), this prefetcher is highly scalable. A single Zynq-7020 device can theoretically accommodate **>300 parallel instances**, making it ideal for manycore accelerator overlays.
 
 **Interpretation:** the FlexPipe control path is compact and easy to add to an accelerator die; the design is clearly hardware-feasible.
 
@@ -257,6 +259,7 @@ Flexagon-DSA/
 │       ├── verilator_harness.cpp
 │       └── json.hpp
 ├── synthesis/
+|   ├── vivado/                   # Post synthesis reports
 │   ├── rtl/                      # copy of RTL used for Yosys synth
 │   ├── synth.ys                  # Yosys script
 │   └── outputs/                  # flexpipe.json, yosys_report.json
@@ -343,3 +346,5 @@ MIT License — see `LICENSE`.
 ---
 
 *End of README*
+
+
