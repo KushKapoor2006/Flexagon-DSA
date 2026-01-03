@@ -190,13 +190,16 @@ These per-request metrics were used to validate timing and align the harness wit
 
 ## Evaluation: numeric metrics & interpretation
 
-### Synthesis / hardware footprint (Yosys, technology-independent)
+### Synthesis / hardware footprint (Vivado: Xilinx Zynq-7020 at 256 MHz)
 
 * **Top module**: `flexpipe_top`
 * **Registers (FFs)**: **311**
-* **Total cells**: **634** (generic logic cells)
-* **Wire bits**: **4,717**
+* **LUTs**: **87**
+* **Worst Negative Slack (WNS)**: **+0.107ns at 250MHz**
+* **Total cells**: **634** (generic logic cells, yosys)
+* **Wire bits**: **4,717** (yosys flattened)
 * **Inferred memories**: 0 (small FIFO → flops)
+* **On-Chip Power**: **377mW**
 
 **Interpretation:** the FlexPipe control path is compact and easy to add to an accelerator die; the design is clearly hardware-feasible.
 
