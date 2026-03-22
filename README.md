@@ -24,7 +24,6 @@
 9. [File structure (expanded)](#file-structure-expanded)
 10. [How to run everything — commands & tips](#how-to-run-everything--commands--tips)
 11. [Roadmap & tracked issues](#roadmap--tracked-issues)
-12. [Authorship & acknowledgement](#authorship--acknowledgement)
 13. [License & contact](#license--contact)
 
 ---
@@ -328,14 +327,6 @@ make report
 
 ---
 
-## Authorship & acknowledgement
-
-* **Research Assistant** Kush Kapoor
-* **Supervisor:** Prof Dr. Ajai Kumar Gautam (Delhi Technological University)
-
-This work was performed as part of a research internship / RA assignment.
-
----
 
 ## License & contact
 
